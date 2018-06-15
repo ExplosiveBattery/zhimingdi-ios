@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="方正启体_GBK.ttf">
+            <string>FZQTK--GBK1-0</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Drawer Controller-->
+        <scene sceneID="2u8-7e-RFp">
+            <objects>
+                <viewController id="o5H-hj-yCC" customClass="DrawerController" customModule="LoginTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d94-R2-UoS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drawer_bg" translatesAutoresizingMaskIntoConstraints="NO" id="UwZ-1p-i5F">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Fog-Bd-VAC">
+                                <rect key="frame" x="147" y="43.5" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="MM9-Ir-rJl"/>
+                                    <constraint firstAttribute="width" constant="80" id="bc9-Ss-bcx"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="昵称" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mbD-dC-RYE">
+                                <rect key="frame" x="164" y="132" width="46" height="26"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="FZQTK--GBK1-0" family="FZQiTi-S14" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Viy-cN-3qX">
+                                <rect key="frame" x="322" y="162" width="38" height="36"/>
+                                <fontDescription key="fontDescription" name="FZQTK--GBK1-0" family="FZQiTi-S14" pointSize="19"/>
+                                <state key="normal" title="注销">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLogoutBtnClick:" destination="o5H-hj-yCC" eventType="touchUpInside" id="r2f-mI-cr6"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2E-sJ-jqd">
+                                <rect key="frame" x="21" y="258.5" width="333" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="cwF-5g-Tq8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctM-bz-Eu8">
+                                <rect key="frame" x="21" y="314" width="333" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="mKZ-mg-Fhn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yC-fT-yX6">
+                                <rect key="frame" x="21" y="370" width="333" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="fZ4-7f-wdI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGr-Tn-Awq">
+                                <rect key="frame" x="21" y="212" width="200" height="38"/>
+                                <fontDescription key="fontDescription" name="FZQTK--GBK1-0" family="FZQiTi-S14" pointSize="21"/>
+                                <inset key="titleEdgeInsets" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="收藏图片">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="onStarBtnClick:" destination="o5H-hj-yCC" eventType="touchUpInside" id="QqY-Y7-zZI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csg-f3-aeb">
+                                <rect key="frame" x="21" y="268" width="200" height="38"/>
+                                <fontDescription key="fontDescription" name="FZQTK--GBK1-0" family="FZQiTi-S14" pointSize="21"/>
+                                <inset key="titleEdgeInsets" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="历史图谱">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="onHistoryBtnClick:" destination="o5H-hj-yCC" eventType="touchUpInside" id="J7q-Hh-1u3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snh-Lv-h5L">
+                                <rect key="frame" x="21" y="323" width="200" height="38"/>
+                                <fontDescription key="fontDescription" name="FZQTK--GBK1-0" family="FZQiTi-S14" pointSize="21"/>
+                                <inset key="titleEdgeInsets" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="清理缓存">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClearBtnClick:" destination="o5H-hj-yCC" eventType="touchUpInside" id="Gr2-FY-jUk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9F-LG-Ny1">
+                                <rect key="frame" x="21" y="379" width="200" height="38"/>
+                                <fontDescription key="fontDescription" name="FZQTK--GBK1-0" family="FZQiTi-S14" pointSize="21"/>
+                                <inset key="titleEdgeInsets" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="捐赠帮助">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="onDonateBtnClick:" destination="o5H-hj-yCC" eventType="touchUpInside" id="S32-z8-Hvy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FCf-ok-1hc" firstAttribute="trailing" secondItem="Viy-cN-3qX" secondAttribute="trailing" constant="15" id="2lD-p9-yw4"/>
+                            <constraint firstItem="2yC-fT-yX6" firstAttribute="leading" secondItem="d94-R2-UoS" secondAttribute="leadingMargin" constant="5" id="6UH-ZM-cQk"/>
+                            <constraint firstItem="Fog-Bd-VAC" firstAttribute="centerY" secondItem="d94-R2-UoS" secondAttribute="centerY" multiplier="0.25" id="6al-UG-peb"/>
+                            <constraint firstItem="csg-f3-aeb" firstAttribute="top" secondItem="L2E-sJ-jqd" secondAttribute="bottom" constant="8.5" id="8v6-SX-uIl"/>
+                            <constraint firstItem="r9F-LG-Ny1" firstAttribute="width" secondItem="d94-R2-UoS" secondAttribute="width" id="BO0-Tu-L96"/>
+                            <constraint firstItem="UwZ-1p-i5F" firstAttribute="height" secondItem="d94-R2-UoS" secondAttribute="height" multiplier="0.3" id="EVS-rB-GXF"/>
+                            <constraint firstItem="r9F-LG-Ny1" firstAttribute="top" secondItem="2yC-fT-yX6" secondAttribute="bottom" constant="8.5" id="Ghd-v0-YRh"/>
+                            <constraint firstItem="csg-f3-aeb" firstAttribute="width" secondItem="d94-R2-UoS" secondAttribute="width" id="Hih-yF-gAc"/>
+                            <constraint firstItem="gGr-Tn-Awq" firstAttribute="top" secondItem="UwZ-1p-i5F" secondAttribute="bottom" constant="12" id="JPo-y6-FbI"/>
+                            <constraint firstItem="UwZ-1p-i5F" firstAttribute="top" secondItem="d94-R2-UoS" secondAttribute="top" id="Lhg-xq-tEs"/>
+                            <constraint firstItem="mbD-dC-RYE" firstAttribute="centerX" secondItem="d94-R2-UoS" secondAttribute="centerX" id="NMB-O6-XDm"/>
+                            <constraint firstItem="L2E-sJ-jqd" firstAttribute="top" secondItem="gGr-Tn-Awq" secondAttribute="bottom" constant="8.5" id="OIa-Xi-UK7"/>
+                            <constraint firstItem="Snh-Lv-h5L" firstAttribute="top" secondItem="ctM-bz-Eu8" secondAttribute="bottom" constant="8.5" id="RxQ-lJ-xDE"/>
+                            <constraint firstItem="L2E-sJ-jqd" firstAttribute="leading" secondItem="d94-R2-UoS" secondAttribute="leadingMargin" constant="5" id="S6U-Ud-Gv7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L2E-sJ-jqd" secondAttribute="trailing" constant="5" id="VZp-Bz-trb"/>
+                            <constraint firstItem="2yC-fT-yX6" firstAttribute="top" secondItem="Snh-Lv-h5L" secondAttribute="bottom" constant="8.5" id="X30-nr-Aqe"/>
+                            <constraint firstItem="mbD-dC-RYE" firstAttribute="top" secondItem="Fog-Bd-VAC" secondAttribute="bottom" constant="8.5" id="YOj-1a-JFF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ctM-bz-Eu8" secondAttribute="trailing" constant="5" id="a9o-NL-jPa"/>
+                            <constraint firstItem="UwZ-1p-i5F" firstAttribute="width" secondItem="d94-R2-UoS" secondAttribute="width" id="aQj-Pj-tOt"/>
+                            <constraint firstItem="UwZ-1p-i5F" firstAttribute="leading" secondItem="FCf-ok-1hc" secondAttribute="leading" id="aul-sp-egi"/>
+                            <constraint firstItem="gGr-Tn-Awq" firstAttribute="width" secondItem="d94-R2-UoS" secondAttribute="width" id="f4B-cX-s5A"/>
+                            <constraint firstItem="Viy-cN-3qX" firstAttribute="top" secondItem="UwZ-1p-i5F" secondAttribute="bottom" constant="-38" id="hoL-SH-lnW"/>
+                            <constraint firstItem="Fog-Bd-VAC" firstAttribute="centerX" secondItem="d94-R2-UoS" secondAttribute="centerX" id="k8W-ZB-Ft5"/>
+                            <constraint firstItem="ctM-bz-Eu8" firstAttribute="leading" secondItem="d94-R2-UoS" secondAttribute="leadingMargin" constant="5" id="l6K-tc-BjZ"/>
+                            <constraint firstItem="Snh-Lv-h5L" firstAttribute="width" secondItem="d94-R2-UoS" secondAttribute="width" id="lLX-ZC-HBQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2yC-fT-yX6" secondAttribute="trailing" constant="5" id="vh9-hH-PKQ"/>
+                            <constraint firstItem="ctM-bz-Eu8" firstAttribute="top" secondItem="csg-f3-aeb" secondAttribute="bottom" constant="8.5" id="zLB-Hh-xyL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FCf-ok-1hc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TpI-tf-aYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="-501.49925037481262"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar" width="100" height="100"/>
+        <image name="drawer_bg" width="960" height="800"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="方正启体_GBK.ttf">
+            <string>FZQTK--GBK1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MentionDialogController" customModule="LoginTest" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="LuZ-2I-vDz" id="pBe-B0-QQP"/>
+                <outlet property="textView" destination="Bt6-ss-zeD" id="jXc-NM-zSO"/>
+                <outlet property="view" destination="iN0-l3-epB" id="01L-vu-PLx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20180404" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuZ-2I-vDz">
+                    <rect key="frame" x="15" y="15" width="100" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="8wA-zM-yk5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FZQTK--GBK1-0" family="FZQiTi-S14" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="说点什么吧..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bt6-ss-zeD">
+                    <rect key="frame" x="15" y="60" width="300" height="170"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="ozC-kc-Nrs"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="FZQTK--GBK1-0" family="FZQiTi-S14" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LuZ-2I-vDz" secondAttribute="trailing" constant="225" id="58i-w4-snp"/>
+                <constraint firstAttribute="bottom" secondItem="Bt6-ss-zeD" secondAttribute="bottom" constant="20" symbolic="YES" id="NNX-zJ-WNS"/>
+                <constraint firstItem="LuZ-2I-vDz" firstAttribute="leading" secondItem="Bt6-ss-zeD" secondAttribute="leading" id="Tte-ra-f1R"/>
+                <constraint firstItem="Bt6-ss-zeD" firstAttribute="top" secondItem="LuZ-2I-vDz" secondAttribute="bottom" constant="7" id="Zau-6t-U8c"/>
+                <constraint firstItem="LuZ-2I-vDz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="mPr-yg-d61"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bt6-ss-zeD" secondAttribute="trailing" constant="25" id="oGv-aO-YvD"/>
+                <constraint firstItem="LuZ-2I-vDz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="rAx-EW-fNe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
